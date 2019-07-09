@@ -1,0 +1,72 @@
+<UserControl x:Class="Pizzaria1.UserControlEscolha"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pizzaria1"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Real estate" Foreground="#FFC00000"/>
+                        <Image Source="Assets/home.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            don't miss this amazing real estate around alemgena near a wonderfull natural place with lots of natures around
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="1.6 million ETB" VerticalAlignment="Center" Margin="10" FontSize="10" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Bid" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Ford car new " Foreground="#FFC00000"/>
+                        <Image Source="Assets/ford.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            This car is a new model made in germany... anyone interested can tell me the price and buy this item...please don't miss it
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="4 million ETB" VerticalAlignment="Center" Margin="10" FontSize="10" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Bid" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="street light project" Foreground="#FFC00000"/>
+                        <Image Source="Assets/streetlight.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                        furnitures for your new home....its new design imported from uae and the initial price i've posted is so cheap please don't miss it within the next two days
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="80,000 ETB" VerticalAlignment="Center" Margin="10" FontSize="10" FontFamily="Champagne &amp; Limousines"/>
+                            <Button Width="100" Content="Bid" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
